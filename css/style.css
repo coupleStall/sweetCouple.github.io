@@ -106,7 +106,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	text-transform: uppercase;
 	color: #eee;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 25px;
 	padding: 5px 0;
 	border: 2px solid transparent;
 	letter-spacing: 0.5px;
@@ -215,7 +215,8 @@ header .intro-text {
 	margin: 0 20px;
 }
 #features img {
-	margin: 30px auto 20px;
+/*	margin: 30px auto 20px;*/
+margin: 10% 10% 10% 10%;
 }
 #features .about-img:before {
 	display: block;
@@ -250,7 +251,7 @@ header .intro-text {
 	height: 570px;
 }
 #about p {
-	line-height: 24px;
+	line-height: 50px;
 	margin: 15px 0 15px;
 }
 /* Menu Section */
