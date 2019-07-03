@@ -32,6 +32,44 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
+
+
+
+
+<style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  </style>
+
+
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
     ==========================================-->
@@ -76,9 +114,10 @@
     <div class="section-title">
         <h2>菜单</h2>
     </div>
+
     <div class="row">
       <div class="col-xs-12 col-sm-4">
-        <div class="features-item">
+        <div class="features-item" >
           <h3>1. 鲜蛤炒东粉</h3>
           <img src="chao dong fen.jpeg" class="img-responsive rotate90" alt="" style="width: 250px; height:300px;" >
          
@@ -86,49 +125,61 @@
       </div>
     <div class="col-xs-12 col-sm-4">
         <div class="features-item">
-          <h3>2.鲜蛤炒果条面</h3>
+          <h3>2. 鲜蛤炒果条面</h3>
           <img src="chao guo tiao mian.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
         
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4">
+
+      <div class="col-xs-12 col-sm-4" id="break">
         <div class="features-item">
-          <h3>3.鲜蛤炒果条米粉</h3>
-          <img src="chao guo tiao mihun.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
+          <h3>3. 鲜蛤炒果条米粉</h3>
+          <img src="chao guo tiao mihun.jpeg" class="img-responsive rotate90 " alt=""style="width: 250px; height:300px;">
          
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="features-item">
-          <h3>4.鲜蛤炒果条</h3>
-          <img src="chao guo tiao.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
          
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="features-item">
-          <h3>5.鲜蛤炒米粉</h3>
-          <img src="Chao Mi Hun.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
-         
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="features-item">
-          <h3>6.鲜蛤炒面</h3>
-          <img src="Chao Mian.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="features-item">
+                  <h3>4.鲜蛤炒果条</h3>
+                  <img src="chao guo tiao.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
+                 
+                </div>
+              </div>
           
+              <div class="col-xs-12 col-sm-4">
+                <div class="features-item">
+                  <h3>5.鲜蛤炒米粉</h3>
+                  <img src="Chao Mi Hun.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
+                 
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="features-item">
+                  <h3>6.鲜蛤炒面</h3>
+                  <img src="Chao Mian.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
+                  
+                </div>
+              </div>
         </div>
+        
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <div class="features-item">
+                  <h3>7.鲜蛤炒乌冬面</h3>
+                  <img src="chao udon.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
       </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="features-item">
-          <h3>7.鲜蛤炒乌冬面</h3>
-          <img src="chao udon.jpeg" class="img-responsive rotate90" alt=""style="width: 250px; height:300px;">
+          </div>
          
         </div>
+
+        
       </div>
     </div>
-  </div>
-</div>
 <!-- About Section -->
 <div id="about" class="text-center">
 
@@ -401,7 +452,22 @@
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
 
+<script>
+//the purpose of this section of script is to determine the width of the screen to determine whether the device is PC or mobile
+//normally 500 width is the standard width of a smartphone (tablet excluded), so if exceeded then different css style apply (in the dic tag with ID of "break" )
+var w=window.outerWidth;
+if (w>500) 
+   {
+	
+    document.getElementById("break").style.marginTop="0px";
+    //alert(" Yes Your screen resolution is: " + screen.width + "x" + screen.height);
+   }
+   else{
+document.getElementById("break").style.marginTop="-25px";
+//alert("ELSE Your screen resolution is: " + screen.width + "x" + screen.height);
 
+   }
+</script>
 
 
 </body>
